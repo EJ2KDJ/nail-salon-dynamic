@@ -42,7 +42,7 @@ Select your assigned branch.
 
 Example:
 
-`frontend-booking`
+`EJ-backend`
 
 ### STEP 3 — Get the latest version
 
