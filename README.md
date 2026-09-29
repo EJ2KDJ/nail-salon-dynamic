@@ -14,7 +14,7 @@ Open GitHub Desktop and log in using the SAME GitHub account na in-add ko sa rep
 After logging in:
 
 1. Click **Clone a repository**
-2. Select our `nail-salon-website` repository
+2. Select our `nail-salon-dynamic` repository
 3. Choose kung saan niyo gusto i-save sa PC
 4. Click **Clone**
 
@@ -42,7 +42,7 @@ Select your assigned branch.
 
 Example:
 
-`frontend-booking`
+`EJ-backend`
 
 ### STEP 3 — Get the latest version
 
