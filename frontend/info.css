@@ -34,16 +34,40 @@ header p {
 }
 
 nav {
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primary-color);
     text-align: center;
-    padding: 0.5rem;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
+}
+
+#logo {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
 }
 
 .container {
@@ -94,4 +118,48 @@ footer {
     background-color: var(--accent-color);
     color: white;
     margin-top: 30px;
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .navLinks a {
+        display: block;
+        margin: 10px 10px;
+    }
+
+    #logo {
+        display: flex;
+    }
+
+    .navLinks {
+        width: 100%;
+        order: 3;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        max-height: 0;
+        align-items: flex-start;
+        overflow: hidden;
+        visibility: hidden;
+        transition: max-height 0.5s ease-out, visibility 0.3s ease-out;
+    }
+
+    .navLinks.show {
+        margin: 1rem;
+        max-height: 300px;
+        visibility: visible;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+
+    #hamburger {
+        display: block;
+    }
 }
