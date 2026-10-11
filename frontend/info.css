@@ -134,6 +134,7 @@ footer {
 
     #logo {
         display: flex;
+        height: 80px;
     }
 
     .navLinks {
