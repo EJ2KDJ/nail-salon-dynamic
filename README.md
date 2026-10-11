@@ -14,7 +14,7 @@ Open GitHub Desktop and log in using the SAME GitHub account na in-add ko sa rep
 After logging in:
 
 1. Click **Clone a repository**
-2. Select our `nail-salon-website` repository
+2. Select our `nail-salon-dynamic` repository
 3. Choose kung saan niyo gusto i-save sa PC
 4. Click **Clone**
 
@@ -24,6 +24,20 @@ IMPORTANT:
 Huwag niyong i-download as ZIP. **Clone** yung gamitin.
 
 Kapag successful, sabihin niyo sa group chat para ma-check natin bago kayo mag-start mag-code.
+
+
+## BAGO MAG-START: INTINDIHIN MUNA ITO
+
+**Fetch origin** only DOWNLOADS yung info kung ano na yung bago sa GitHub. **HINDI** niya nilalagay yung changes sa files niyo.
+
+Para talagang makuha yung changes, kailangan niyo pang **Pull** o **Merge**.
+
+Dalawang klase ng "update":
+
+1. **Pull origin** = kunin yung updates ng SARILI niyong branch (kung may ibang nag-push sa branch niyo).
+2. **Update from main** = kunin yung latest ng `main` papunta sa branch niyo. Dito niyo makukuha yung mga na-merge na PR ng ibang members.
+
+Kung hindi niyo ginawa ito, hindi niyo makikita yung bagong files ng iba.
 
 
 ## EVERY TIME NA MAGCO-CODE KAYO
@@ -42,19 +56,21 @@ Select your assigned branch.
 
 Example:
 
-`frontend-booking`
+`EJ-backend`
+
+**I-double check na NASA branch niyo kayo, hindi sa `main`.**
 
 ### STEP 3 — Get the latest version
 
 Before you start coding:
 
-**Fetch origin**
+1. Click **Fetch origin**.
+2. Kung may lumabas na **Pull origin**, i-click ito.
+3. Kung may banner na *"The branch main has N new commits"*, i-click yung **Update from main**.
 
-Then kung may lumabas na update:
+   Kung walang banner, pwede rin: **Branch → Update from main**.
 
-**Pull origin**
-
-Ito para makuha niyo yung latest changes ng ibang members.
+Kapag may lumabas na merge conflict, **STOP** at sabihin sa group chat. Huwag manghula.
 
 ### STEP 4 — Code normally
 
@@ -80,6 +96,8 @@ Then click:
 
 **Commit to [your branch]**
 
+Tingnan na yung nakasulat sa button ay yung branch NIYO, hindi `main`.
+
 ### STEP 7 — Push
 
 Click:
@@ -102,13 +120,19 @@ Then sabihin sa group chat:
 
 WAIT for someone to check it before merging.
 
+### STEP 9 — Pagkatapos ma-merge yung PR
+
+Bumalik sa GitHub Desktop, i-click ang **Fetch origin**, tapos **Update from main** (STEP 3) para makuha niyo yung latest na kasama na yung changes ng buong team.
+
 ---
 
 ## IMPORTANT
 
-Huwag niyong i-edit directly yung `main`.
+Huwag niyong i-edit or i-push directly yung `main`.
 
 Huwag niyong i-delete or baguhin yung ibang person's branch.
+
+Kung nag-push kayo sa `main` by mistake, **huwag niyong i-undo mag-isa**. Sabihin agad sa group chat.
 
 Kung may error or hindi niyo alam gagawin:
 
