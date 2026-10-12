@@ -4,13 +4,16 @@
     <meta charset="utf-8" />
     <title>Book Now / Contact - PinkieBabe Nails</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #e8a5b8; 
             --secondary-color: #fcf8f6; 
             --text-color: #4a4a4a;
             --accent-color: #9e6d7d;
-            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-family: 'Cormorant Garamond', serif;
         }
 
         * {
@@ -19,6 +22,7 @@
 
         body {
             font-family: var(--font-family);
+            font-size: 1.6875rem;
             margin: 0;
             padding: 0;
             background-color: var(--secondary-color);
@@ -46,7 +50,7 @@
         header h1 {
             margin: 0;
             color: var(--accent-color);
-            font-size: 2rem;
+            font-size: clamp(3rem, 7.5vw, 3.75rem);
         }
 
         header p {
@@ -69,11 +73,13 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            font-size: 1.575rem;
             transition: opacity 0.2s;
         }
 
+
+
         nav a:hover, nav a.active {
-            text-decoration: underline;
             opacity: 0.85;
         }
 
@@ -96,6 +102,7 @@
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 5px;
             margin-top: 0;
+            font-size: 2.4rem;
         }
 
         .contact-info {
@@ -114,13 +121,18 @@
             border-radius: 6px;
         }
 
+        .contact-card a{
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
         /* Interactive Booking Styles */
         .booking-step-title {
             font-weight: bold;
             color: var(--accent-color);
             margin-top: 15px;
             margin-bottom: 10px;
-            font-size: 1.1rem;
+            font-size: 1.8rem;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -178,7 +190,7 @@
             border-radius: 5px;
             cursor: pointer;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 1.5rem;
             transition: all 0.2s;
         }
 
@@ -219,7 +231,7 @@
         .form-group label {
             font-weight: bold;
             color: var(--accent-color);
-            font-size: 0.9rem;
+            font-size: 1.5rem;
         }
 
         .form-group input, 
@@ -228,6 +240,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             font-family: inherit;
+            font-size: 1.5rem;
         }
 
         .summary-box {
@@ -247,7 +260,7 @@
 
         .summary-total {
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.875rem;
             color: var(--accent-color);
             border-top: 1px solid #f0e4e6;
             padding-top: 8px;
@@ -263,7 +276,7 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 1.65rem;
             margin-top: 10px;
             cursor: pointer;
             border: none;
@@ -311,7 +324,7 @@
     <header>
         <img src="Logo Nail salon.jpg" alt="PinkieBabe Nails Logo" class="logo-img" />
         <h1>PinkieBabe Nails</h1>
-        <p>Home-Service Nail Care & Beauty Salon</p>
+        <p>Home-Service Nail Tech</p>
         <p><small>Owner: Elaine Navarro Reyes</small></p>
     </header>
 
@@ -329,7 +342,7 @@
             <div class="contact-info">
                 <div class="contact-card">
                     <strong>📍 Location:</strong>
-                    <br><small>Service Area: Ilang-Ilang St., Guadalupe Viejo, Makati City</small>
+                    <br><small>Service Area: <a href="https://www.google.com/maps/place/Ilang-Ilang+St.,+Guadalupe+Viejo,+Makati+City" target="_blank">Ilang-Ilang St., Guadalupe Viejo, Makati City</a></small>
                 </div>
                 <div class="contact-card">
                     <strong>📧 Email:</strong>
@@ -337,7 +350,8 @@
                 </div>
                 <div class="contact-card">
                     <strong>📱 Social Media:</strong>
-                    <br><small>FB / IG: @PinkieBabeNails</small>
+                    <br><small>IG: <a href="https://www.instagram.com/pinkiebabe3/" target="_blank">@pinkiebabe3</a></small>
+                    <br><small>FB Page: <a href="https://www.facebook.com/pinkiebabe1202" target="_blank">pinkiebabe1202</a></small>
                 </div>
             </div>
         </section>
@@ -370,20 +384,6 @@
                             <small style="color: #777;">Long-lasting gel art</small>
                         </div>
                         <div class="service-price">₱800</div>
-                    </div>
-                    <div class="service-option-card" onclick="toggleService(this, 'Rejuvenating Facial', 500)">
-                        <div>
-                            <div class="service-name">Rejuvenating Facial</div>
-                            <small style="color: #777;">Relaxing skin care</small>
-                        </div>
-                        <div class="service-price">₱500</div>
-                    </div>
-                    <div class="service-option-card" onclick="toggleService(this, 'Full Body Massage', 600)">
-                        <div>
-                            <div class="service-name">Full Body Massage</div>
-                            <small style="color: #777;">1 hour relaxation</small>
-                        </div>
-                        <div class="service-price">₱600</div>
                     </div>
                 </div>
 
