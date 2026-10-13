@@ -81,3 +81,8 @@ select.field option:checked,select.field option:hover{background:var(--select-ho
 .social{margin:0 0 .5rem}
 .social a{color:#fff;font-weight:600;transition:color .2s}
 .social a:hover{color:#ffe0e8;text-decoration:underline}
+
+/* ---------- About page: keep content centered in the middle of the screen ---------- */
+main{display:flex;flex-direction:column}
+#about:target{flex:1;display:flex;flex-direction:column;justify-content:center}
+#about .wrap{width:100%}
